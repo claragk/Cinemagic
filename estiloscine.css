@@ -23,6 +23,13 @@ image-container {position: relative; text-align: center;}
 
 h2 {font-size: 35px;font-family: 'Poppins', sans-serif; font-weight:bolder; padding-top: 4%; padding-left: 9%}
 
+.col:hover{color: white; transform: scale(0.9); transition:transform 0.3s ease;}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
 .site-footer {background-color: black;padding: 70px;text-align: right;margin-top: 5%;display: flex;justify-content: space-between; align-items: center;}
 .footer-titles{display: flex;flex-direction: column;}
 .footer-titles a:hover {color:#E05E27;}
@@ -30,3 +37,16 @@ h2 {font-size: 35px;font-family: 'Poppins', sans-serif; font-weight:bolder; padd
 .social-icons {display: flex;flex-direction: column;align-items:flex-end;}
 .social-icons a {margin-bottom: 13px;color: white}
 .social-icons a:hover {color:#E05E27;}
+
+@media (max-width: 768px) {
+  .custom-icon { margin-right: 0; }
+  .custom-navbar { padding: 2%; }
+  h1, h2 { padding-left: 5%; }
+  .site-footer { flex-direction: column; text-align: center; }
+  .footer-titles, .social-icons { margin-bottom: 20px; }
+}
+
+@media (max-width: 768px) {
+  h1, h2 { font-size: 25px; }
+}
+
